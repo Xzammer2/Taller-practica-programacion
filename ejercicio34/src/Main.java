@@ -8,7 +8,7 @@ public class Main {
             System.out.print("Ingrese un número entero positivo: ");
             while (!scanner.hasNextInt()) {
                 System.out.println("Valor no válido. Debe ser un número entero.");
-                scanner.next(); // Limpiar entrada incorrecta
+                scanner.next(); //para entrada incorrecta
                 System.out.print("Ingrese un número entero positivo: ");
             }
             numero = scanner.nextInt();
