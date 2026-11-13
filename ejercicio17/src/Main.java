@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    // Función para calcular el IVA (19%)
     public static double calcularIVA(double subtotal) {
         return subtotal * 0.19;
     }
@@ -17,14 +16,12 @@ public class Main {
 
         double descuento = 0;
 
-        // Si la venta es mayor a 150.000, aplicamos un descuento del 5%
         if (valorVenta > 150000) {
             descuento = valorVenta * 0.05;
-            valorVenta -= descuento; // Restamos el descuento al valor de la venta
+            valorVenta -= descuento; 
             System.out.println("¡Aplica descuento del 5%! Valor del descuento: $" + descuento);
         }
 
-        // Calculamos el IVA usando la función requerida
         double iva = calcularIVA(valorVenta);
         double totalPagar = valorVenta + iva;
 
