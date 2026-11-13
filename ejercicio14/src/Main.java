@@ -10,12 +10,10 @@ public class Main {
         System.out.print("Ingrese una cantidad de segundos: ");
         int totalSegundos = scanner.nextInt();
 
-        // Cálculos
         int horas = totalSegundos / 3600;
         int minutos = (totalSegundos % 3600) / 60;
         int segundos = totalSegundos % 60;
 
-        // Usamos String.format para asegurarnos de que siempre se vea con dos dígitos (ej: 09:05:02)
         String resultadoFormateado = String.format("%02d:%02d:%02d", horas, minutos, segundos);
 
         System.out.println("Resultado -> " + resultadoFormateado);
