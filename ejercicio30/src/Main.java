@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    // Fórmula general para polígonos regulares: Área = (Perímetro * Apotema) / 2
+    // Fórmula: area = (Pe*A)/2 A: apotema; pe: perimetro
     public static double calcularAreaPoligonoRegular(double numeroLados, double longitudLado, double apotema) {
         double perimetro = numeroLados * longitudLado;
         return (perimetro * apotema) / 2;
