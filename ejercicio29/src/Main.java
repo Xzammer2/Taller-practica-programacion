@@ -2,7 +2,7 @@ public class Main {
 
     public static boolean esPalindromo(String palabra) {
         String limpia = palabra.replaceAll("\\s+", "").toLowerCase();
-        // Aquí corregimos 'limpiada' por 'limpia':
+     
         String invertida = new StringBuilder(limpia).reverse().toString();
         return limpia.equals(invertida);
     }
